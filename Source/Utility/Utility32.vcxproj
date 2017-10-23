@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16ECFC72-03BA-4150-96AE-A68824B7C37D}</ProjectGuid>
+    <RootNamespace>Utility</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\Bin\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\Bin\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <IntDir>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\Bin\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\Bin\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./include;./include/stream;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;UTILITY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)../lib/$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(ProjectDir)\..\Lib\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./include;./include/stream;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;UTILITY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)../lib/$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(ProjectDir)\..\Lib\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;UTILITY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImportLibrary>$(ProjectDir)\..\Lib\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\$(TargetName).lib</ImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;UTILITY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4275;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(ProjectDir)\..\Lib\$(Configuration)$(PlatformShortName)\$(PlatformToolset)\$(TargetName).lib</ImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <BuildLog>
+      <Path>$(SolutionDir)..\Obj\$(Configuration)$(PlatformShortName)\$(ProjectName)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CloneObject.cpp" />
+    <ClCompile Include="src\MutexLock.cpp" />
+    <ClCompile Include="src\ThreadCondition.cpp" />
+    <ClCompile Include="src\ThreadEvent.cpp" />
+    <ClCompile Include="src\ThreadMutex.cpp" />
+    <ClCompile Include="src\ThreadSafeEvent.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\TimeUtil.cpp" />
+    <ClCompile Include="src\XLoopTask.cpp" />
+    <ClCompile Include="src\XTask.cpp" />
+    <ClCompile Include="src\Graph.cpp" />
+    <ClCompile Include="src\RGBA.cpp" />
+    <ClCompile Include="src\DebugObject.cpp" />
+    <ClCompile Include="src\Subject.cpp" />
+    <ClCompile Include="src\MessageDealer.cpp" />
+    <ClCompile Include="src\MessageIDGenerator.cpp" />
+    <ClCompile Include="src\MessageManager.cpp" />
+    <ClCompile Include="src\Telegram.cpp" />
+    <ClCompile Include="src\MapPoint.cpp" />
+    <ClCompile Include="src\MathUtilBase.cpp" />
+    <ClCompile Include="src\AutoRegisterObjectManager.cpp" />
+    <ClCompile Include="src\DllLoader.cpp" />
+    <ClCompile Include="src\DllLoadObserver.cpp" />
+    <ClCompile Include="src\DllManager.cpp" />
+    <ClCompile Include="src\DllManager_Implement.cpp" />
+    <ClCompile Include="src\ReflectObject.cpp" />
+    <ClCompile Include="src\ReflectObject_Implement.cpp" />
+    <ClCompile Include="src\CodeConvert.cpp" />
+    <ClCompile Include="src\CodeConvertNet.cpp" />
+    <ClCompile Include="src\GlobalKeyGenerator.cpp" />
+    <ClCompile Include="src\XEncoder.cpp" />
+    <ClCompile Include="src\ConfigUtil.cpp" />
+    <ClCompile Include="src\UniqueIDGenerator.cpp" />
+    <ClCompile Include="src\Variant.cpp" />
+    <ClCompile Include="src\XMouseKeyboard.cpp" />
+    <ClCompile Include="src\StlUtil.cpp" />
+    <ClCompile Include="src\XDir.cpp" />
+    <ClCompile Include="src\XFile.cpp" />
+    <ClCompile Include="src\IxComponentManager.cpp" />
+    <ClCompile Include="src\IxObject.cpp" />
+    <ClCompile Include="src\IxObjectCreator.cpp" />
+    <ClCompile Include="src\IxObjectManager.cpp" />
+    <ClCompile Include="src\LogSystem.cpp" />
+    <ClCompile Include="src\XUnitTestBase.cpp" />
+    <ClCompile Include="src\Random.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base_constant.h" />
+    <ClInclude Include="include\excepts.h" />
+    <ClInclude Include="include\typedefs.h" />
+    <ClInclude Include="include\utility_common.h" />
+    <ClInclude Include="include\UtilityExport.h" />
+    <ClInclude Include="include\Guard.h" />
+    <ClInclude Include="include\MutexLock.h" />
+    <ClInclude Include="include\ThreadCondition.h" />
+    <ClInclude Include="include\ThreadEvent.h" />
+    <ClInclude Include="include\ThreadMutex.h" />
+    <ClInclude Include="include\ThreadSafeEvent.h" />
+    <ClInclude Include="include\TimeUtil.h" />
+    <ClInclude Include="include\XLoopTask.h" />
+    <ClInclude Include="include\XTask.h" />
+    <ClInclude Include="include\Graph.h" />
+    <ClInclude Include="include\RGBA.h" />
+    <ClInclude Include="include\CloneObject.h" />
+    <ClInclude Include="include\CommandSimulate.h" />
+    <ClInclude Include="include\DebugObject.h" />
+    <ClInclude Include="include\Singleton.h" />
+    <ClInclude Include="include\State.h" />
+    <ClInclude Include="include\StateMachine.h" />
+    <ClInclude Include="include\Subject.h" />
+    <ClInclude Include="include\MemoryManager.h" />
+    <ClInclude Include="include\MessageDealer.h" />
+    <ClInclude Include="include\MessageIDGenerator.h" />
+    <ClInclude Include="include\MessageManager.h" />
+    <ClInclude Include="include\Telegram.h" />
+    <ClInclude Include="include\MapPoint.h" />
+    <ClInclude Include="include\MathUtilBase.h" />
+    <ClInclude Include="include\AutoRegisterObject.h" />
+    <ClInclude Include="include\AutoRegisterObjectManager.h" />
+    <ClInclude Include="include\AutoRegisterProxy.h" />
+    <ClInclude Include="include\DllLoader.h" />
+    <ClInclude Include="include\DllLoadObserver.h" />
+    <ClInclude Include="include\DllManager.h" />
+    <ClInclude Include="include\DllManager_Implement.h" />
+    <ClInclude Include="include\ReflectObject.h" />
+    <ClInclude Include="include\ReflectObject_Implement.h" />
+    <ClInclude Include="include\CodeConvert.h" />
+    <ClInclude Include="include\CodeConvertNet.h" />
+    <ClInclude Include="include\GlobalKeyGenerator.h" />
+    <ClInclude Include="include\md5.h" />
+    <ClInclude Include="include\XEncoder.h" />
+    <ClInclude Include="include\ConfigUtil.h" />
+    <ClInclude Include="include\EventDef.h" />
+    <ClInclude Include="include\FileDirControl.h" />
+    <ClInclude Include="include\KeyObjectManager.h" />
+    <ClInclude Include="include\KeyPointerManager.h" />
+    <ClInclude Include="include\KeyValue.h" />
+    <ClInclude Include="include\obj.h" />
+    <ClInclude Include="include\ObserverBase.h" />
+    <ClInclude Include="include\PropertyMacro.h" />
+    <ClInclude Include="include\UniqueIDGenerator.h" />
+    <ClInclude Include="include\Variant.h" />
+    <ClInclude Include="include\XMouseKeyboard.h" />
+    <ClInclude Include="include\exio.h" />
+    <ClInclude Include="include\StlUtil.h" />
+    <ClInclude Include="include\XDir.h" />
+    <ClInclude Include="include\XFile.h" />
+    <ClInclude Include="include\IxComponent.h" />
+    <ClInclude Include="include\IxComponentManager.h" />
+    <ClInclude Include="include\IxObject.h" />
+    <ClInclude Include="include\IxObjectCreator.h" />
+    <ClInclude Include="include\IxObjectManager.h" />
+    <ClInclude Include="include\LogSystem.h" />
+    <ClInclude Include="include\XUnitTestBase.h" />
+    <ClInclude Include="include\Random.h" />
+    <ClInclude Include="include\SmartPtr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Timer" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

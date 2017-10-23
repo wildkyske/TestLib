@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="export">
+      <UniqueIdentifier>{730bd9f7-1bf4-4c0d-91d6-f87db7a29dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="系统关联">
+      <UniqueIdentifier>{736e6d57-0c2a-4d31-9686-d9d31497454d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="图论">
+      <UniqueIdentifier>{8c9ef012-8820-4834-afcd-fe522d9b9255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="通用颜色">
+      <UniqueIdentifier>{9c955d1d-815d-4cf6-be79-8d7466e61225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="设计模式">
+      <UniqueIdentifier>{a1699219-061e-40bd-971d-203035018535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="消息循环">
+      <UniqueIdentifier>{e78d39a6-44fb-49b2-ae52-da2e527305d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="通用坐标%28废弃可能%29">
+      <UniqueIdentifier>{782310cf-8201-4ba8-bf67-9646fc8fdc7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基础算术">
+      <UniqueIdentifier>{f6648c5b-fa46-4dae-a70d-0d6dc1e80c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="插件">
+      <UniqueIdentifier>{8d35ed58-20f7-4508-9af2-057965c4f75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="编码转码">
+      <UniqueIdentifier>{f5a524d2-2cab-49cf-a51c-dfff5a08b0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="不太常用%28准备移除%29">
+      <UniqueIdentifier>{7409999a-e50a-4307-b823-3b41761da411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文件IO">
+      <UniqueIdentifier>{792ab8d8-f076-4f32-be29-5b387fd9cb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="一体化对象">
+      <UniqueIdentifier>{c14b67fc-4967-4db3-b086-f2102b00330f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="日志">
+      <UniqueIdentifier>{af2c1e32-2b4b-4eda-a1ba-5be26d68f20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="单元测试框架%28简单%29">
+      <UniqueIdentifier>{3250f1bb-0d3b-43ac-a0f5-2a62f14ca0d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="随机数">
+      <UniqueIdentifier>{70d5ada6-ed4f-4a3c-bb09-d14769eb5f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="智能指针%28简单%29">
+      <UniqueIdentifier>{db045376-d67b-443e-bf9e-0005aed46f64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CloneObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MutexLock.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadCondition.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadEvent.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadMutex.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadSafeEvent.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeUtil.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XLoopTask.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XTask.cpp">
+      <Filter>系统关联</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graph.cpp">
+      <Filter>图论</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RGBA.cpp">
+      <Filter>通用颜色</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DebugObject.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Subject.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageDealer.cpp">
+      <Filter>消息循环</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageIDGenerator.cpp">
+      <Filter>消息循环</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageManager.cpp">
+      <Filter>消息循环</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Telegram.cpp">
+      <Filter>消息循环</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MapPoint.cpp">
+      <Filter>通用坐标%28废弃可能%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MathUtilBase.cpp">
+      <Filter>基础算术</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AutoRegisterObjectManager.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DllLoader.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DllLoadObserver.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DllManager.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DllManager_Implement.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReflectObject.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReflectObject_Implement.cpp">
+      <Filter>插件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CodeConvert.cpp">
+      <Filter>编码转码</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CodeConvertNet.cpp">
+      <Filter>编码转码</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GlobalKeyGenerator.cpp">
+      <Filter>编码转码</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XEncoder.cpp">
+      <Filter>编码转码</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConfigUtil.cpp">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UniqueIDGenerator.cpp">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Variant.cpp">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XMouseKeyboard.cpp">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StlUtil.cpp">
+      <Filter>文件IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XDir.cpp">
+      <Filter>文件IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XFile.cpp">
+      <Filter>文件IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IxComponentManager.cpp">
+      <Filter>一体化对象</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IxObject.cpp">
+      <Filter>一体化对象</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IxObjectCreator.cpp">
+      <Filter>一体化对象</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IxObjectManager.cpp">
+      <Filter>一体化对象</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LogSystem.cpp">
+      <Filter>日志</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XUnitTestBase.cpp">
+      <Filter>单元测试框架%28简单%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Random.cpp">
+      <Filter>随机数</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base_constant.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\excepts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\typedefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility_common.h">
+      <Filter>export</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UtilityExport.h">
+      <Filter>export</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Guard.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MutexLock.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadCondition.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadEvent.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadMutex.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadSafeEvent.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeUtil.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XLoopTask.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XTask.h">
+      <Filter>系统关联</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graph.h">
+      <Filter>图论</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RGBA.h">
+      <Filter>通用颜色</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CloneObject.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandSimulate.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DebugObject.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Singleton.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\State.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StateMachine.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Subject.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryManager.h">
+      <Filter>消息循环</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessageDealer.h">
+      <Filter>消息循环</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessageIDGenerator.h">
+      <Filter>消息循环</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessageManager.h">
+      <Filter>消息循环</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Telegram.h">
+      <Filter>消息循环</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MapPoint.h">
+      <Filter>通用坐标%28废弃可能%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MathUtilBase.h">
+      <Filter>基础算术</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoRegisterObject.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoRegisterObjectManager.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoRegisterProxy.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DllLoader.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DllLoadObserver.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DllManager.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DllManager_Implement.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReflectObject.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReflectObject_Implement.h">
+      <Filter>插件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CodeConvert.h">
+      <Filter>编码转码</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CodeConvertNet.h">
+      <Filter>编码转码</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GlobalKeyGenerator.h">
+      <Filter>编码转码</Filter>
+    </ClInclude>
+    <ClInclude Include="include\md5.h">
+      <Filter>编码转码</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XEncoder.h">
+      <Filter>编码转码</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigUtil.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventDef.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileDirControl.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KeyObjectManager.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KeyPointerManager.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KeyValue.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\obj.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObserverBase.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PropertyMacro.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UniqueIDGenerator.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Variant.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XMouseKeyboard.h">
+      <Filter>不太常用%28准备移除%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\exio.h">
+      <Filter>文件IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StlUtil.h">
+      <Filter>文件IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XDir.h">
+      <Filter>文件IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XFile.h">
+      <Filter>文件IO</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IxComponent.h">
+      <Filter>一体化对象</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IxComponentManager.h">
+      <Filter>一体化对象</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IxObject.h">
+      <Filter>一体化对象</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IxObjectCreator.h">
+      <Filter>一体化对象</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IxObjectManager.h">
+      <Filter>一体化对象</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LogSystem.h">
+      <Filter>日志</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XUnitTestBase.h">
+      <Filter>单元测试框架%28简单%29</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Random.h">
+      <Filter>随机数</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SmartPtr.h">
+      <Filter>智能指针%28简单%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Timer">
+      <Filter>系统关联</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
